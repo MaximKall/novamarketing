@@ -151,6 +151,15 @@ body {
     color: #ffffff;
 }
 
+.service-icon {
+    width: 30px;
+    padding: 10px;
+}
+
+.service-more {
+    padding-left: 10px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #000000;
