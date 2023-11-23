@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/assets/Satoshi-Black.otf');
+}
+
+body {
+    top: 0;
+    font-size: 2rem;
+    font-family: 'Satoshi';
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+#title {
+    margin-top: 0;
+}
+
+#titleContainer {
+    height: 50svh;
+}
+
+#paragraph2,
+#paragraph3,
+#paragraph4,
+#paragraph5,
+#paragraph6 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#logoContainer {
+    height: 25svh;
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@keyframes jumping {
+
+    0% {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    25% {
+        transform: translateY(-20px) rotate(-45deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    75% {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(-45deg);
+    }
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titleLogo {
+    visibility: hidden;
+    animation: jumping 2.6s ease-in-out infinite;
+}
+
+.titleLogo.visible {
+    visibility: visible;
+    animation: fadeInFromBottom 2s forwards;
+}
+
+#paragraphContainer {
+    height: 25svh;
+}
+
+#imp i {
+    font-size: 1rem;
+}
+
+#imp {
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+#footer p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#imp:hover {
+    text-decoration: underline;
+}
+
+#contactContainer input,
+#contactContainer textarea {
+    display: flex;
+    background: transparent;
+    border: none;
+    margin: 10px 0;
+    width: 100%;
+    outline: none;
+    max-width: 90vw;
+    width: 400px;
+    font-size: 1.5rem;
+    color: black;
+    align-self: flex-start;
+}
+
+#from {
+    padding-left: 0;
+}
+
+#submit {
+    padding-left: 0;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+#contactContainer p {
+    font-size: 3rem;
+}
+
+#contactContainer {
+    padding-bottom: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    #imp {
+        color: white;
+    }
+
+    #contactContainer input,
+    #contactContainer textarea {
+        color: white;
+    }
+}
