@@ -29,8 +29,8 @@ window.onload = function () {
         } else {
             setTimeout(function () {
                 document.querySelector('.titleLogo').classList.add('visible'); // Make the rocket visible with animation
-                setTimeout(typeWriterParagraph, 1500); // Delay the start of the paragraph animation
-            }, 400); // Delay before making the rocket visible
+                setTimeout(typeWriterParagraph, 1000); // Delay the start of the paragraph animation
+            }, 0); // Delay before making the rocket visible
         }
     }
 

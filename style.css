@@ -139,6 +139,18 @@ body {
     padding-bottom: 50px;
 }
 
+#imprintContainer {
+    margin-top: 5vh;
+}
+
+
+#imprintContainer a,
+#imprintContainer p,
+#imprintContainer h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #000000;
