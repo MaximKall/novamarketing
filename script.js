@@ -14,6 +14,7 @@ window.onload = function () {
     let j = 0;
     let lineIndex = 0;
 
+
     function typeWriterTitle() {
         if (lineIndex < titleLines.length) {
             if (i < titleLines[lineIndex].length) {
