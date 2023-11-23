@@ -161,6 +161,25 @@ body {
     padding-left: 10px;
 }
 
+#testimonials a {
+    color: black;
+}
+
+#testimonials p {
+    font-size: 1.5rem;
+}
+
+#videoPlayer {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+#signa {
+    padding-left: 10px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #000000;
@@ -168,6 +187,10 @@ body {
     }
 
     #imp {
+        color: white;
+    }
+
+    #testimonials a {
         color: white;
     }
 
